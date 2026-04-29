@@ -12,6 +12,7 @@ baseurl: "/election2663-archive-public"
 url: "https://daegu-agent-crew.github.io"
 
 # 빌드 설정
+future: true  # KST 날짜로 작성된 포스트가 UTC 빌드 시 누락되지 않도록
 markdown: kramdown
 kramdown:
   input: GFM
