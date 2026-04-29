@@ -1,0 +1,31 @@
+<nav class="wiki-sidebar">
+  <div class="sidebar-section">
+    <div class="sidebar-title">Wiki</div>
+    <ul>
+      <li><a href="{{ '/wiki/' | relative_url }}" {% if page.url == '/wiki/' or page.url == '/wiki/index.html' %}class="active"{% endif %}>개요</a></li>
+      <li><a href="{{ '/wiki/election-calendar' | relative_url }}" {% if page.url contains 'election-calendar' %}class="active"{% endif %}>선거 일정</a></li>
+      <li><a href="{{ '/wiki/timeline' | relative_url }}" {% if page.url contains 'timeline' %}class="active"{% endif %}>타임라인</a></li>
+    </ul>
+  </div>
+  <div class="sidebar-section">
+    <div class="sidebar-title">후보 &middot; 정당</div>
+    <ul>
+      <li><a href="{{ '/wiki/candidates/' | relative_url }}" {% if page.url contains '/wiki/candidates' %}class="active"{% endif %}>후보자</a></li>
+    </ul>
+  </div>
+  <div class="sidebar-section">
+    <div class="sidebar-title">쟁점 &middot; 정책</div>
+    <ul>
+      <li><a href="{{ '/wiki/issues/' | relative_url }}" {% if page.url contains '/wiki/issues' %}class="active"{% endif %}>이슈</a></li>
+      <li><a href="{{ '/wiki/policies/' | relative_url }}" {% if page.url contains '/wiki/policies' %}class="active"{% endif %}>정책 &middot; 공약</a></li>
+    </ul>
+  </div>
+  <div class="sidebar-section">
+    <div class="sidebar-title">기록</div>
+    <ul>
+      <li><a href="{{ '/wiki/polls/' | relative_url }}" {% if page.url contains '/wiki/polls' %}class="active"{% endif %}>여론조사</a></li>
+      <li><a href="{{ '/wiki/debates/' | relative_url }}" {% if page.url contains '/wiki/debates' %}class="active"{% endif %}>토론회</a></li>
+      <li><a href="{{ '/wiki/sources/' | relative_url }}" {% if page.url contains '/wiki/sources' %}class="active"{% endif %}>출처</a></li>
+    </ul>
+  </div>
+</nav>

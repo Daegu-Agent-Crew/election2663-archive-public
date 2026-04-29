@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<div class="container wiki-container">
+  {% include wiki-sidebar.html %}
+  <article class="wiki-content">
+    {% if page.title %}
+    <h1 class="page-title">{{ page.title }}</h1>
+    {% endif %}
+    {% include wiki-meta.html %}
+    {{ content }}
+  </article>
+</div>

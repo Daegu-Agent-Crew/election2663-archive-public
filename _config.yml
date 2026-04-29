@@ -1,0 +1,55 @@
+title: 대구시장 선거 2026
+description: >-
+  2026년 6월 3일 대구광역시장 선거 공개 정보 wiki.
+  비당파적 출처 기반 선거 지식베이스.
+election: daegu-mayor-2026
+
+# GitHub Pages 배포 설정
+# 프로젝트 사이트인 경우 baseurl을 /저장소이름으로 설정
+# 예: baseurl: "/election2663-archive-public"
+# 사용자/조직 사이트(username.github.io)인 경우 비워 둡니다
+baseurl: "/election2663-archive-public"
+url: "https://daegu-agent-crew.github.io"
+
+# 빌드 설정
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+
+# 플러그인
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# 피드 설정
+feed:
+  path: blog/feed.xml
+
+# 기본값
+defaults:
+  - scope:
+      path: "wiki"
+    values:
+      layout: "wiki"
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# 제외 파일
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+  - README.md
+  - "*.sh"

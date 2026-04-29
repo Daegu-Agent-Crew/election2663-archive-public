@@ -1,0 +1,463 @@
+/* ===== 기본 설정 ===== */
+:root {
+  --font-sans: system-ui, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+  --font-mono: "SF Mono", "Fira Code", "Consolas", monospace;
+
+  --color-bg: #ffffff;
+  --color-text: #1a1a1a;
+  --color-muted: #5a5a5a;
+  --color-border: #e4e4e4;
+  --color-surface: #f7f7f7;
+  --color-primary: #1a56d6;
+  --color-primary-hover: #1044ba;
+  --color-link: #1a56d6;
+
+  --status-draft-bg: #f0f0f0;
+  --status-draft-fg: #666666;
+  --status-auto-bg: #fef3c7;
+  --status-auto-fg: #92400e;
+  --status-review-bg: #fee2e2;
+  --status-review-fg: #991b1b;
+  --status-reviewed-bg: #dcfce7;
+  --status-reviewed-fg: #166534;
+  --status-archived-bg: #f1f5f9;
+  --status-archived-fg: #64748b;
+  --conf-high-bg: #dbeafe;
+  --conf-high-fg: #1e40af;
+  --conf-mid-bg: #fef9c3;
+  --conf-mid-fg: #854d0e;
+  --conf-low-bg: #f1f5f9;
+  --conf-low-fg: #64748b;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { font-size: 16px; scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--color-text);
+  background: var(--color-bg);
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== 컨테이너 ===== */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ===== 헤더 ===== */
+.site-header {
+  border-bottom: 1px solid var(--color-border);
+  padding: 0.75rem 0;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.site-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+
+.site-title:hover { color: var(--color-primary); }
+
+.site-nav {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.site-nav a {
+  color: var(--color-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.25rem 0;
+  border-bottom: 2px solid transparent;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
+/* ===== 메인 컨텐츠 ===== */
+.main-content {
+  min-height: calc(100vh - 120px);
+  padding: 2rem 0;
+}
+
+/* ===== 페이지 ===== */
+.page-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 1.5rem;
+  line-height: 1.3;
+}
+
+.page-content h1 { font-size: 1.75rem; }
+.page-content h2 { font-size: 1.35rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--color-border); }
+.page-content h3 { font-size: 1.1rem; margin-top: 1.5rem; }
+
+/* ===== Wiki 레이아웃 ===== */
+.wiki-container {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 2.5rem;
+  align-items: start;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.wiki-sidebar {
+  position: sticky;
+  top: 72px;
+  padding-top: 0.5rem;
+}
+
+.sidebar-section {
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-title {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-muted);
+  margin-bottom: 0.5rem;
+}
+
+.wiki-sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wiki-sidebar li {
+  margin: 0;
+}
+
+.wiki-sidebar a {
+  display: block;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  color: var(--color-muted);
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: background 0.1s, color 0.1s;
+}
+
+.wiki-sidebar a:hover,
+.wiki-sidebar a.active {
+  background: var(--color-surface);
+  color: var(--color-primary);
+}
+
+/* ===== Wiki 메타데이터 ===== */
+.wiki-meta {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 0.875rem 1rem;
+  margin-bottom: 1.75rem;
+  font-size: 0.85rem;
+}
+
+.wiki-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.wiki-meta-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.25rem 1rem;
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.wiki-meta-grid dt {
+  font-weight: 600;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+.wiki-meta-grid dd { margin: 0; }
+
+/* ===== 배지 ===== */
+.badge {
+  display: inline-block;
+  padding: 0.15em 0.55em;
+  border-radius: 3px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.badge-draft { background: var(--status-draft-bg); color: var(--status-draft-fg); }
+.badge-auto { background: var(--status-auto-bg); color: var(--status-auto-fg); }
+.badge-review { background: var(--status-review-bg); color: var(--status-review-fg); }
+.badge-reviewed { background: var(--status-reviewed-bg); color: var(--status-reviewed-fg); }
+.badge-archived { background: var(--status-archived-bg); color: var(--status-archived-fg); }
+.badge-conf-high { background: var(--conf-high-bg); color: var(--conf-high-fg); }
+.badge-conf-mid { background: var(--conf-mid-bg); color: var(--conf-mid-fg); }
+.badge-conf-low { background: var(--conf-low-bg); color: var(--conf-low-fg); }
+
+/* ===== Wiki 컨텐츠 ===== */
+.wiki-content {
+  min-width: 0;
+}
+
+.wiki-content h2 {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.wiki-content h3 { font-size: 1.05rem; margin-top: 1.5rem; }
+
+/* ===== 블로그 ===== */
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.post-list-item {
+  border-bottom: 1px solid var(--color-border);
+  padding: 1.25rem 0;
+}
+
+.post-list-item:first-child { border-top: 1px solid var(--color-border); }
+
+.post-list-item h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1.1rem;
+}
+
+.post-list-item h2 a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.post-list-item h2 a:hover { color: var(--color-primary); }
+
+.post-date {
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-excerpt { color: var(--color-muted); font-size: 0.9rem; margin: 0; }
+
+.post-header { margin-bottom: 2rem; }
+.post-title { font-size: 1.75rem; font-weight: 700; margin: 0 0 0.5rem; letter-spacing: -0.02em; }
+.post-meta { color: var(--color-muted); font-size: 0.875rem; }
+.post-body { line-height: 1.8; }
+.post-footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--color-border); }
+
+.category {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+  padding: 0.1em 0.4em;
+  font-size: 0.8rem;
+}
+
+/* ===== 홈페이지 ===== */
+.home-hero {
+  padding: 3rem 0 2rem;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 2.5rem;
+}
+
+.home-hero h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin: 0 0 0.75rem;
+  line-height: 1.2;
+}
+
+.home-hero p {
+  font-size: 1.05rem;
+  color: var(--color-muted);
+  max-width: 600px;
+  margin: 0 0 1.5rem;
+}
+
+.home-notice {
+  display: inline-block;
+  background: var(--status-draft-bg);
+  color: var(--status-draft-fg);
+  border-radius: 4px;
+  padding: 0.3em 0.8em;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+.home-card {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  text-decoration: none;
+  color: var(--color-text);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.home-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 2px 8px rgba(26,86,214,0.08);
+}
+
+.home-card h3 { margin: 0 0 0.4rem; font-size: 1rem; font-weight: 700; color: var(--color-primary); }
+.home-card p { margin: 0; font-size: 0.875rem; color: var(--color-muted); }
+
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-primary);
+  display: inline-block;
+}
+
+.election-dates {
+  background: var(--color-surface);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.election-dates h2 { margin: 0 0 1rem; font-size: 1rem; font-weight: 700; }
+
+.date-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+}
+
+.date-list li { font-size: 0.9rem; }
+.date-list strong { display: block; font-size: 0.78rem; color: var(--color-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; }
+
+/* ===== 일반 요소 ===== */
+a { color: var(--color-link); }
+a:hover { color: var(--color-primary-hover); }
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+  padding: 0.1em 0.35em;
+}
+
+pre {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  overflow-x: auto;
+  font-size: 0.875rem;
+}
+
+pre code { background: none; border: none; padding: 0; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  margin: 1rem 0;
+}
+
+th, td {
+  border: 1px solid var(--color-border);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+th {
+  background: var(--color-surface);
+  font-weight: 600;
+  font-size: 0.82rem;
+}
+
+tr:hover td { background: #fafafa; }
+
+blockquote {
+  border-left: 3px solid var(--color-primary);
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  color: var(--color-muted);
+  background: var(--color-surface);
+  border-radius: 0 4px 4px 0;
+}
+
+/* ===== 푸터 ===== */
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+.site-footer p { margin: 0.25rem 0; }
+.footer-meta a { color: var(--color-muted); }
+.footer-meta a:hover { color: var(--color-primary); }
+
+/* ===== 반응형 ===== */
+@media (max-width: 768px) {
+  .wiki-container {
+    grid-template-columns: 1fr;
+  }
+
+  .wiki-sidebar {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .sidebar-section { margin-bottom: 0; }
+
+  .wiki-sidebar ul { display: flex; flex-wrap: wrap; gap: 0.25rem; }
+
+  .home-hero h1 { font-size: 1.5rem; }
+
+  .site-nav { gap: 1rem; }
+}

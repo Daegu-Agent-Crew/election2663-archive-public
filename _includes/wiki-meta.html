@@ -1,0 +1,44 @@
+{% assign status = page.status | default: "draft" %}
+{% assign confidence = page.confidence | default: "low" %}
+<div class="wiki-meta">
+  <div class="wiki-meta-row">
+    {% if status == "reviewed" %}
+      <span class="badge badge-reviewed">검토 완료</span>
+    {% elsif status == "needs_review" %}
+      <span class="badge badge-review">검토 필요</span>
+    {% elsif status == "auto_generated" %}
+      <span class="badge badge-auto">자동 생성</span>
+    {% elsif status == "archived" %}
+      <span class="badge badge-archived">보관됨</span>
+    {% else %}
+      <span class="badge badge-draft">초안</span>
+    {% endif %}
+
+    {% if confidence == "high" %}
+      <span class="badge badge-conf-high">신뢰도 높음</span>
+    {% elsif confidence == "medium" %}
+      <span class="badge badge-conf-mid">신뢰도 중간</span>
+    {% else %}
+      <span class="badge badge-conf-low">신뢰도 낮음</span>
+    {% endif %}
+  </div>
+
+  <dl class="wiki-meta-grid">
+    {% if page.last_updated %}
+    <dt>최근 갱신</dt>
+    <dd>{{ page.last_updated | date: "%Y-%m-%d" }}</dd>
+    {% endif %}
+    {% if page.updated_by %}
+    <dt>갱신 주체</dt>
+    <dd>{{ page.updated_by }}</dd>
+    {% endif %}
+    {% if page.source_ids and page.source_ids.size > 0 %}
+    <dt>출처 ID</dt>
+    <dd>{{ page.source_ids | join: ", " }}</dd>
+    {% endif %}
+    {% if page.review_notes %}
+    <dt>검토 메모</dt>
+    <dd>{{ page.review_notes }}</dd>
+    {% endif %}
+  </dl>
+</div>

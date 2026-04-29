@@ -1,0 +1,9 @@
+<header class="site-header">
+  <div class="container">
+    <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <nav class="site-nav">
+      <a href="{{ '/wiki/' | relative_url }}" {% if page.url contains '/wiki/' %}class="active"{% endif %}>Wiki</a>
+      <a href="{{ '/blog/' | relative_url }}" {% if page.url contains '/blog/' or page.layout == 'post' %}class="active"{% endif %}>블로그</a>
+    </nav>
+  </div>
+</header>
