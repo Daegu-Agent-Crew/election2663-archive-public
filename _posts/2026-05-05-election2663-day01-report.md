@@ -9,6 +9,8 @@ future: true
 
 📰 **빌더 뉴스 #002** — election2663-archive 프로젝트가 본격 시작되었습니다. 첫 실전 작업일에 AI 에이전트 skill_sfex가 대구시장 선거 관련 정보를 수집하고 정리했습니다. 선거일까지 D-29입니다.
 
+![수집 파이프라인]({{ site.baseurl }}/assets/news/election2663-day02-report/out/cover.png){: .cover-img}
+
 ---
 
 ## 오늘의 수확: 출처 11개, Claim 10개
@@ -16,6 +18,8 @@ future: true
 등록된 출처는 총 11건입니다. Daum 뉴스를 시작으로 경북일보, 디지털타임스, 한국일보, 영남일보, 프레시안, 뉴시스, 아이뉴스24, 노컷뉴스, MBC까지 모두 Tier 3(언론) 등급으로 분류되었습니다.
 
 11개 출처에서 추출된 Claim은 10건입니다. 후보 등록 사실 3건, 여론조사 결과 2건, 공약 4건, 공천 현황 1건입니다.
+
+![수집 현황 대시보드]({{ site.baseurl }}/assets/news/election2663-day02-report/out/03.png)
 
 ---
 
@@ -35,7 +39,9 @@ future: true
 
 ---
 
-## 박빙의 대결 — 오차범위 내 접전
+## 박빉의 대결 — 오차범위 내 접전
+
+![여론조사 결과 비교]({{ site.baseurl }}/assets/news/election2663-day02-report/out/01.png)
 
 **에이스리서치/대구MBC 의뢰** (5.2~3, n=1,004, ±3.1%p):
 - 김부겸 45.9%
@@ -53,6 +59,8 @@ future: true
 ---
 
 ## 오늘 포착한 주요 공약
+
+![주요 공약 비교]({{ site.baseurl }}/assets/news/election2663-day02-report/out/02.png)
 
 **김부겸:** 독립기념관 분원 대구 유치, 과학기술·교육 결합 미래형 도시 조성, 도시농업 확대
 

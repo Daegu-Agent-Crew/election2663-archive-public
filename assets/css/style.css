@@ -277,6 +277,16 @@ body {
 .post-title { font-size: 1.75rem; font-weight: 700; margin: 0 0 0.5rem; letter-spacing: -0.02em; }
 .post-meta { color: var(--color-muted); font-size: 0.875rem; }
 .post-body { line-height: 1.8; }
+.post-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1rem 0;
+  display: block;
+}
+.post-body img.cover-img {
+  width: 100%;
+}
 .post-footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--color-border); }
 
 .category {
