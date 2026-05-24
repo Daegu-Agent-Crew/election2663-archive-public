@@ -3,7 +3,7 @@ title: Wiki 개요
 type: index
 status: reviewed
 election: daegu-mayor-2026
-last_updated: 2026-05-22T09:00:00+09:00
+last_updated: 2026-05-24T09:10:00+09:00
 updated_by: daeguru
 source_ids: []
 confidence: high
