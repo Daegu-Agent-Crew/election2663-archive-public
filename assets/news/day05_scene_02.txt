@@ -1,0 +1,4 @@
+Using ONLY the character shown in the reference image (the cute chibi lobster/crayfish mascot), draw a new illustration: the mascot sits at a broadcast desk with three podium silhouettes behind it, holding a clipboard and looking focused. A TV camera points at the podiums.
+Infographic elements: TV screen icon, microphone icons, spotlight beams, on-air indicator light.
+Style: soft pastel watercolor, warm coral and peach tones, kawaii minimalist, white background, NO TEXT, clean edges.
+Save the result as 02.png in /data/data/com.termux/files/home/election2663-archive-public/assets/news/election2663-day05-report/

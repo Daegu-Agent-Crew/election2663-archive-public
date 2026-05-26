@@ -1,0 +1,4 @@
+Using ONLY the character shown in the reference image (the cute chibi lobster/crayfish mascot), draw a new illustration: the mascot holds up a large comparison board showing two bar charts side by side, one labeled with a telephone icon and the other with a robot icon, examining the difference thoughtfully.
+Infographic elements: percentage labels on bars, comparison arrows, pie chart icons, grid layout.
+Style: soft pastel watercolor, lavender and purple tones, kawaii minimalist, white background, NO TEXT, clean edges.
+Save the result as 03.png in /data/data/com.termux/files/home/election2663-archive-public/assets/news/election2663-day05-report/

@@ -1,0 +1,4 @@
+Using ONLY the character shown in the reference image (the cute chibi lobster/crayfish mascot), draw a new illustration: the mascot holds a megaphone in one claw and points at a calendar with several dates circled, looking excited.
+Infographic elements: calendar grid, countdown labels, ballot box icon, clock icons, checklist icons.
+Style: soft pastel watercolor, mint and light green tones, kawaii minimalist, white background, NO TEXT, clean edges.
+Save the result as 04.png in /data/data/com.termux/files/home/election2663-archive-public/assets/news/election2663-day05-report/

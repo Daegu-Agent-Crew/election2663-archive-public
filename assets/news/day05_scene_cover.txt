@@ -1,0 +1,3 @@
+Using ONLY the character shown in the reference image (the cute chibi lobster/crayfish mascot), draw a new illustration: the mascot stands in front of a TV camera on a debate stage, holding a microphone and pointing at a countdown clock. Infographic elements: TV screen icon, podium silhouettes, countdown number labels, spotlight beams.
+Style: soft pastel watercolor, peach and lavender tones, kawaii minimalist, white background, NO TEXT, clean edges.
+Save the result as cover.png in /data/data/com.termux/files/home/election2663-archive-public/assets/news/election2663-day05-report/
