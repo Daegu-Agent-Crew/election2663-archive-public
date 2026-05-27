@@ -2,7 +2,7 @@
 layout: post
 title: "Wiki는 어떻게 만들어지나"
 date: 2026-04-30
-categories: [운영, 방법론]
+categories: [ops, methodology]
 ---
 
 선거 정보는 어디에나 있다. 선관위 공지, 언론 기사, 후보 SNS, 여론조사 결과… 그런데 한 후보의 교통 공약이 뭔지 확인하려면 대체 어디서부터 봐야 할까?

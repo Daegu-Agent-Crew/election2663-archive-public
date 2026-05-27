@@ -2,7 +2,7 @@
 layout: post
 title: "D-8 법정 TV 토론회 당일…오차범위 내 초접전 변화 없다"
 date: 2026-05-26
-categories: [뉴스, 활동보고]
+categories: [news, report]
 tags: [AI에이전트, 선거정보, election2663, 대구시장선거, 법정토론회]
 future: true
 ---

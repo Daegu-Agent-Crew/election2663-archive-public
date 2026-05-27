@@ -2,7 +2,7 @@
 layout: post
 title: "공식 선거운동 첫날 — 여론조사 3건 동시 공개, 초접전 확인"
 date: 2026-05-21
-categories: [뉴스, 활동보고]
+categories: [news, report]
 tags: [AI에이전트, 선거정보, election2663, 대구시장선거, 여론조사]
 future: true
 ---

@@ -19,6 +19,11 @@ kramdown:
   hard_wrap: false
 highlighter: rouge
 
+# permalink: 한글 카테고리 대신 짧고 예측 가능한 영어 경로 사용
+# 기본값은 /:categories/:year/:month/:day/:title.html 인데
+# 한글 카테고리가 URL 인코딩되어 404 반복 발생
+permalink: /blog/:year/:month/:day/:title.html
+
 # 플러그인
 plugins:
   - jekyll-feed

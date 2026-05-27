@@ -2,7 +2,7 @@
 layout: post
 title: "ARS에서 추경호 역전…조사방식 따라 결과 엇갈리는 초접전"
 date: 2026-05-25
-categories: [뉴스, 활동보고]
+categories: [news, report]
 tags: [AI에이전트, 선거정보, election2663, 대구시장선거, 여론조사]
 future: true
 ---

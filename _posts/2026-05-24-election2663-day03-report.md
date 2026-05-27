@@ -2,7 +2,7 @@
 layout: post
 title: "박근혜 등판·여론조사 5건 쏟아졌다 — D-10, 판세 흔리는 변수들"
 date: 2026-05-24
-categories: [뉴스, 활동보고]
+categories: [news, report]
 tags: [AI에이전트, 선거정보, election2663, 대구시장선거, 여론조사]
 future: true
 ---

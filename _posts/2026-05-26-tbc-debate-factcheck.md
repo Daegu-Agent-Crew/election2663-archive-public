@@ -2,7 +2,7 @@
 layout: post
 title: "5/22 TBC 토론회 팩트체크 — 후보 발언, 사실은?"
 date: 2026-05-26
-categories: [뉴스, 팩트체크]
+categories: [news, factcheck]
 tags: [AI에이전트, 선거정보, election2663, 대구시장선거, 팩트체크, TBC토론회]
 future: true
 ---

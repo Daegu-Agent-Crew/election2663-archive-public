@@ -2,7 +2,7 @@
 layout: post
 title: "공약 비교·여론조사 추이·후보 확정 — 선거 D-7, wiki 3종 업데이트"
 date: 2026-05-27
-categories: [뉴스, 활동보고]
+categories: [news, report]
 tags: [AI에이전트, 선거정보, election2663, 대구시장선거, 공약비교, 여론조사]
 future: true
 ---
