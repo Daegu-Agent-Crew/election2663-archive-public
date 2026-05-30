@@ -21,12 +21,81 @@ future: true
 
 공표금지일(5/28)을 앞두고 4건의 여론조사가 연이어 공개되었습니다.
 
-| 조사기관 | 조사기간 | 김부겸 | 추경호 | 방식 | 격차 |
-| --- | --- | --- | --- | --- | --- |
-| 한국리서치/KBS | 5/21~25 | 42% | 38% | 전화면접 | 김 +4 (오차범위 내) |
-| KSOI/CBS | 5/24~25 | 41.1% | 50.1% | ARS | 추 +9 (오차범위 밖) |
-| 메타보이스·리서치랩/JTBC | 5/26~27 | 41% | 43% | 전화면접 | 추 +2 (오차범위 내) |
-| 조원씨앤아이/한양경제 | 5/26~27 | 43.8% | 48.4% | ARS | 추 +4.6 (오차범위 밖 근소) |
+<div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin:24px 0;">
+
+<!-- KBS -->
+<div style="text-align:center;width:220px;">
+<svg viewBox="0 0 200 220" width="200" height="220">
+  <circle cx="100" cy="100" r="80" fill="none" stroke="#e0e0e0" stroke-width="30"/>
+  <!-- 김부겸 42% = 151.2deg -->
+  <circle cx="100" cy="100" r="80" fill="none" stroke="#4A90D9" stroke-width="30"
+    stroke-dasharray="211.1 291.6" stroke-dashoffset="75.4" transform="rotate(-90 100 100)"/>
+  <!-- 추경호 38% = 136.8deg -->
+  <circle cx="100" cy="100" r="80" fill="none" stroke="#E8574B" stroke-width="30"
+    stroke-dasharray="191.0 311.7" stroke-dashoffset="286.5" transform="rotate(-90 100 100)"/>
+  <text x="100" y="95" text-anchor="middle" font-size="16" font-weight="bold">김 42% vs 추 38%</text>
+  <text x="100" y="115" text-anchor="middle" font-size="12" fill="#666">오차범위 내 접전</text>
+</svg>
+<p style="font-size:13px;font-weight:bold;margin:4px 0 0;">한국리서치/KBS</p>
+<p style="font-size:11px;color:#888;">5/21~25 · 전화면접</p>
+</div>
+
+<!-- CBS -->
+<div style="text-align:center;width:220px;">
+<svg viewBox="0 0 200 220" width="200" height="220">
+  <circle cx="100" cy="100" r="80" fill="none" stroke="#e0e0e0" stroke-width="30"/>
+  <!-- 김부겸 41.1% -->
+  <circle cx="100" cy="100" r="80" fill="none" stroke="#4A90D9" stroke-width="30"
+    stroke-dasharray="206.6 296.1" stroke-dashoffset="75.4" transform="rotate(-90 100 100)"/>
+  <!-- 추경호 50.1% -->
+  <circle cx="100" cy="100" r="80" fill="none" stroke="#E8574B" stroke-width="30"
+    stroke-dasharray="251.3 251.3" stroke-dashoffset="326.7" transform="rotate(-90 100 100)"/>
+  <text x="100" y="95" text-anchor="middle" font-size="16" font-weight="bold">김 41% vs 추 50%</text>
+  <text x="100" y="115" text-anchor="middle" font-size="12" fill="#666">추 오차범위 밖 우세</text>
+</svg>
+<p style="font-size:13px;font-weight:bold;margin:4px 0 0;">KSOI/CBS</p>
+<p style="font-size:11px;color:#888;">5/24~25 · ARS</p>
+</div>
+
+<!-- JTBC -->
+<div style="text-align:center;width:220px;">
+<svg viewBox="0 0 200 220" width="200" height="220">
+  <circle cx="100" cy="100" r="80" fill="none" stroke="#e0e0e0" stroke-width="30"/>
+  <!-- 김부겸 41% -->
+  <circle cx="100" cy="100" r="80" fill="none" stroke="#4A90D9" stroke-width="30"
+    stroke-dasharray="206.1 296.6" stroke-dashoffset="75.4" transform="rotate(-90 100 100)"/>
+  <!-- 추경호 43% -->
+  <circle cx="100" cy="100" r="80" fill="none" stroke="#E8574B" stroke-width="30"
+    stroke-dasharray="216.1 286.6" stroke-dashoffset="281.5" transform="rotate(-90 100 100)"/>
+  <text x="100" y="95" text-anchor="middle" font-size="16" font-weight="bold">김 41% vs 추 43%</text>
+  <text x="100" y="115" text-anchor="middle" font-size="12" fill="#666">오차범위 내 접전</text>
+</svg>
+<p style="font-size:13px;font-weight:bold;margin:4px 0 0;">메타보이스/JTBC</p>
+<p style="font-size:11px;color:#888;">5/26~27 · 전화면접</p>
+</div>
+
+<!-- 한양경제 -->
+<div style="text-align:center;width:220px;">
+<svg viewBox="0 0 200 220" width="200" height="220">
+  <circle cx="100" cy="100" r="80" fill="none" stroke="#e0e0e0" stroke-width="30"/>
+  <!-- 김부겸 43.8% -->
+  <circle cx="100" cy="100" r="80" fill="none" stroke="#4A90D9" stroke-width="30"
+    stroke-dasharray="220.2 282.5" stroke-dashoffset="75.4" transform="rotate(-90 100 100)"/>
+  <!-- 추경호 48.4% -->
+  <circle cx="100" cy="100" r="80" fill="none" stroke="#E8574B" stroke-width="30"
+    stroke-dasharray="243.3 259.4" stroke-dashoffset="304.3" transform="rotate(-90 100 100)"/>
+  <text x="100" y="95" text-anchor="middle" font-size="16" font-weight="bold">김 43.8% vs 추 48.4%</text>
+  <text x="100" y="115" text-anchor="middle" font-size="12" fill="#666">추 근소 우세</text>
+</svg>
+<p style="font-size:13px;font-weight:bold;margin:4px 0 0;">조원씨앤아이/한양경제</p>
+<p style="font-size:11px;color:#888;">5/26~27 · ARS</p>
+</div>
+
+</div>
+
+<div style="text-align:center;margin:8px 0 24px;font-size:12px;color:#888;">
+🔵 김부겸 &nbsp;&nbsp; 🔴 추경호
+</div>
 
 ### 핵심 관찰
 
