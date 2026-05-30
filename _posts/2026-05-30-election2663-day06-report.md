@@ -11,7 +11,11 @@ future: true
 
 선거일(D-4)을 앞두고 공표금지일 전 마지막 여론조사 4건이 공개되었고, 2차 TV토론회와 사전투표 현황까지 한꺼번에 수집했습니다.
 
+![cover](/assets/news/election2663-day06-report/cover.png)
+
 ---
+
+![01](/assets/news/election2663-day06-report/01.png)
 
 ## 섹션 1: 막판 여론조사 4종 분석 — 오차범위 내 초접전, 조사마다 엇갈림
 
@@ -45,6 +49,8 @@ future: true
 
 ---
 
+![02](/assets/news/election2663-day06-report/02.png)
+
 ## 섹션 2: 2차 TV토론회 핵심 — GRDP·신공항·테슬라·안보 정면충돌
 
 5월 26일 대구MBC에서 2차 TV토론회가 열렸습니다. 김부겸·추경호·이수찬 3인이 참석했습니다.
@@ -70,6 +76,8 @@ future: true
 
 ---
 
+![03](/assets/news/election2663-day06-report/03.png)
+
 ## 섹션 3: 사전투표 시작 — 대구 1일차 9.02%
 
 6·3 지방선거 사전투표가 5월 29일 시작되었습니다.
@@ -82,6 +90,8 @@ future: true
 사전투표는 5/30(토)까지 이틀간 진행됩니다. 최종 투표율은 선거 결과의 중요 지표가 될 전망입니다.
 
 ---
+
+![04](/assets/news/election2663-day06-report/04.png)
 
 ## 수집 통계
 
