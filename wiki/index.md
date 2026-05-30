@@ -3,7 +3,7 @@ title: 2026 대구광역시장 선거 위키
 type: index
 status: auto_generated
 election: daegu-mayor-2026
-last_updated: 2026-05-27T10:00:00+09:00
+last_updated: 2026-05-30T10:30:00+09:00
 updated_by: agent
 source_ids:
   - source-20260505-0012
@@ -44,9 +44,11 @@ review_notes: 선거 일정은 Tier 1 공식 확인. 후보자 정보는 Tier 3 
 
 ## 최근 수집 현황
 
-- 등록 출처: 17건 (Tier 1: 6건, Tier 3: 11건)
-- 추출 Claim: 15건
-- 마지막 수집: 2026-05-05
+- 등록 출처: 24건 이상 (Tier 1: 6건, Tier 3: 18건 이상)
+- 추출 Claim: 23건 이상
+- 마지막 수집: 2026-05-30
+- 최근 수집 내용: 5/30 D-4 수집 — 4건 여론조사(KBS, CBS/KSOI, JTBC, 한양경제), 2차 TV토론회 상세, 사전투표 1일차 현황
+- 사전투표 1일차(5/29): 대구 9.02% (전국 최저, 역대 지방선거 최고치)
 
 ## 미확인 사항
 
